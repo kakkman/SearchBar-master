@@ -1,0 +1,6 @@
+framework module Pods_Search_Bar {
+  umbrella header "Pods-Search Bar-umbrella.h"
+
+  export *
+  module * { export * }
+}

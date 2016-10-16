@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FF090222B248B1110971C7E /* Pods_Search_Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77BA1AAC6E0403DDAB2A693 /* Pods_Search_Bar.framework */; };
 		A49F60551DB30F78003D1DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F60541DB30F78003D1DC5 /* AppDelegate.swift */; };
 		A49F60571DB30F78003D1DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49F60561DB30F78003D1DC5 /* ViewController.swift */; };
 		A49F605A1DB30F78003D1DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49F60581DB30F78003D1DC5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151EAB663F1CCFD2A7C0EEF9 /* Pods-Search Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search Bar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Search Bar/Pods-Search Bar.debug.xcconfig"; sourceTree = "<group>"; };
 		A49F60511DB30F78003D1DC5 /* Search Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Search Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49F60541DB30F78003D1DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49F60561DB30F78003D1DC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		A49F60701DB30F79003D1DC5 /* Search BarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Search BarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49F60741DB30F79003D1DC5 /* Search_BarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_BarUITests.swift; sourceTree = "<group>"; };
 		A49F60761DB30F79003D1DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77BA1AAC6E0403DDAB2A693 /* Pods_Search_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search_Bar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6D35813D0BC604BD92AD4F /* Pods-Search Bar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search Bar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Search Bar/Pods-Search Bar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF090222B248B1110971C7E /* Pods_Search_Bar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				A49F60681DB30F79003D1DC5 /* Search BarTests */,
 				A49F60731DB30F79003D1DC5 /* Search BarUITests */,
 				A49F60521DB30F78003D1DC5 /* Products */,
+				FF0F7AF14BDB7BA006966B82 /* Pods */,
+				ADB31480CF926D73B87BCD3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "Search BarUITests";
 			sourceTree = "<group>";
 		};
+		ADB31480CF926D73B87BCD3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77BA1AAC6E0403DDAB2A693 /* Pods_Search_Bar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0F7AF14BDB7BA006966B82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				151EAB663F1CCFD2A7C0EEF9 /* Pods-Search Bar.debug.xcconfig */,
+				EE6D35813D0BC604BD92AD4F /* Pods-Search Bar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49F60791DB30F79003D1DC5 /* Build configuration list for PBXNativeTarget "Search Bar" */;
 			buildPhases = (
+				5F1405481BB096993367F77B /* [CP] Check Pods Manifest.lock */,
 				A49F604D1DB30F78003D1DC5 /* Sources */,
 				A49F604E1DB30F78003D1DC5 /* Frameworks */,
 				A49F604F1DB30F78003D1DC5 /* Resources */,
+				0DEB0C6FFB206E06E61BB290 /* [CP] Embed Pods Frameworks */,
+				E25288430B70D2EBE4D97D1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DEB0C6FFB206E06E61BB290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search Bar/Pods-Search Bar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F1405481BB096993367F77B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E25288430B70D2EBE4D97D1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Search Bar/Pods-Search Bar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A49F604D1DB30F78003D1DC5 /* Sources */ = {
@@ -400,6 +475,7 @@
 		};
 		A49F607A1DB30F79003D1DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151EAB663F1CCFD2A7C0EEF9 /* Pods-Search Bar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Search Bar/Info.plist";
@@ -411,6 +487,7 @@
 		};
 		A49F607B1DB30F79003D1DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6D35813D0BC604BD92AD4F /* Pods-Search Bar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Search Bar/Info.plist";
@@ -487,6 +564,7 @@
 				A49F607B1DB30F79003D1DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A49F607C1DB30F79003D1DC5 /* Build configuration list for PBXNativeTarget "Search BarTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +573,7 @@
 				A49F607E1DB30F79003D1DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A49F607F1DB30F79003D1DC5 /* Build configuration list for PBXNativeTarget "Search BarUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +582,7 @@
 				A49F60811DB30F79003D1DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
